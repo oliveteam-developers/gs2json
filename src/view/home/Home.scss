@@ -1,0 +1,72 @@
+.home-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    flex-direction: column;
+    background: #e7e7e7;
+    h3 {
+        margin: 0;
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    h4 {
+        margin: 0;
+        margin-top: 3rem;
+        font-size: 1rem;
+    }
+    p {
+        &.note {
+            margin: 0;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            font-style: italic;
+            color: #5b5b5b;
+            width: 50%;
+            text-align: center;
+        }
+    }
+    .home-content-form {
+        width: 30%;
+        margin-top: 2rem;
+        form {
+            .form-item {
+                margin-bottom: 1rem;
+                h5 {
+                    font-size: 0.8rem;
+                }
+                p {
+                    &.error {
+                        margin: 0;
+                        margin-top: 0.3rem;
+                        color: red;
+                        font-size: 0.7rem;
+                    }
+                }
+                input {
+                    height: 2.5rem;
+                    border-radius: 5px;
+                }
+            }
+            .form-buttons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button {
+                    height: 2.5rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .home-content-google-sheet-data {
+        margin: 2rem 0;
+        width: 60%;
+        .react-json-view {
+            border-radius: 5px;
+            padding: 1rem;
+        }
+    }
+}
